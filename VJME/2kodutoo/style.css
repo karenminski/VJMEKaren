@@ -1,0 +1,64 @@
+body {
+	background-color: rgb(226, 219, 156);
+	color: #ffffff;
+	font-family: verdana;
+	background-image: url("../../../../~rinde/media/pics/tlu_h200.png");
+	background-repeat: no-repeat;/*repeat  no-repeat  repeat-x  repeat-x*/
+	background-position: center center;/*top center bottom   left  center  right*/
+    background-attachment: fixed;/*scroll*/
+}
+
+h1, h2, h3 {
+	color: rgb(255, 255, 255);
+}
+
+section {
+	background-color: rgba(134, 171, 192, 0.5);
+	background-image: url("../../../../~rinde/media/pics/top_left_01_transparent.png"), 
+    url("../../../../~rinde/media/pics/bottom_right_01_transparent.png");
+    background-repeat: no-repeat;
+	background-size: 50px;/*contain*/
+    background-position: top left, bottom right;
+	position: relative;
+}
+
+img {
+	height: 100%;
+	width: 500px;
+}
+
+#upper_left {
+	width: 45px; 
+	height: 45px;
+	top: 0; 
+	left: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+#upper_right {
+	width: 45px; 
+	height: 45px;
+	top: 0px;
+	right: 0px;
+	position: absolute;
+	z-index: -1;
+}
+
+#lower_left {
+	width: 45px; 
+	height: 45px;
+	bottom: 0px; 
+	left: 0px;
+	position: absolute;
+	z-index: -1;
+}
+
+#lower_right {
+	width: 45px; 
+	height: 45px;
+	bottom: 0px;
+	right: 0px;
+	position: absolute;
+	z-index: -1;
+}
