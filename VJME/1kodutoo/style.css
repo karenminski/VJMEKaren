@@ -2,23 +2,29 @@ body {
 	background-color: rgb(226, 219, 156);
 	color: #ffffff;
 	font-family: verdana;
-	background-image: url("../../../../~rinde/media/pics/tlu_h200.png");
-	background-repeat: no-repeat;/*repeat  no-repeat  repeat-x  repeat-x*/
-	background-position: center center;/*top center bottom   left  center  right*/
-    background-attachment: fixed;/*scroll*/
+	background-image: url("https://www.tlu.ee/sites/default/files/styles/image_1300xn/public/Veebisisu/Ylemised/3700x1100%20pildivalik181.jpg?h=531b3bcc&itok=J_o5opj3");
+	background-repeat: no-repeat;
+	/*repeat  no-repeat  repeat-x  repeat-x*/
+	background-position: center center;
+	/*top center bottom   left  center  right*/
+	background-attachment: fixed;
+	/*scroll*/
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	color: rgb(255, 255, 255);
 }
 
 section {
 	background-color: rgba(134, 171, 192, 0.5);
-	background-image: url("../../../../~rinde/media/pics/top_left_01_transparent.png"), 
-    url("../../../../~rinde/media/pics/bottom_right_01_transparent.png");
-    background-repeat: no-repeat;
-	background-size: 50px;/*contain*/
-    background-position: top left, bottom right;
+	background-image: url("https://i.vimeocdn.com/portrait/1528204_640x640"),
+		url("https://i.vimeocdn.com/portrait/1528204_640x640");
+	background-repeat: no-repeat;
+	background-size: 50px;
+	/*contain*/
+	background-position: top left, bottom right;
 	position: relative;
 }
 
@@ -28,16 +34,16 @@ img {
 }
 
 #upper_left {
-	width: 45px; 
+	width: 45px;
 	height: 45px;
-	top: 0; 
+	top: 0;
 	left: 0;
 	position: absolute;
 	z-index: -1;
 }
 
 #upper_right {
-	width: 45px; 
+	width: 45px;
 	height: 45px;
 	top: 0px;
 	right: 0px;
@@ -46,19 +52,43 @@ img {
 }
 
 #lower_left {
-	width: 45px; 
+	width: 45px;
 	height: 45px;
-	bottom: 0px; 
+	bottom: 0px;
 	left: 0px;
 	position: absolute;
 	z-index: -1;
 }
 
 #lower_right {
-	width: 45px; 
+	width: 45px;
 	height: 45px;
 	bottom: 0px;
 	right: 0px;
 	position: absolute;
 	z-index: -1;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(134, 171, 192, 0.5);
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: rgba(71, 105, 125, 0.5);
 }

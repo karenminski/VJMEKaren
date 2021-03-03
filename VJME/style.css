@@ -1,0 +1,39 @@
+body {
+	background-color: rgb(170, 198, 197);
+	color: #ffffff;
+	font-family: verdana;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 10%;
+	background-color: rgb(170, 198, 197);
+	height: 100%;
+	/* Full height */
+	position: fixed;
+	/* Make it stick, even on scroll */
+	overflow: auto;
+	/* Enable scrolling if the sidenav has too much content */
+	border-right: 3px dashed rgb(39, 76, 116);
+}
+
+li a {
+	display: block;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+	background-color: rgb(39, 76, 116);
+	color: rgb(255, 255, 255);
+}
+
+div {
+	margin-left: 10%;
+	padding: 1px 16px;
+	height: 1000px;
+}
