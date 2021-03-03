@@ -26,23 +26,23 @@ h3 {
 
 .image2 {
 	position: absolute;
-	height: 200px;
+	height: 210px;
 	width: 200px;
 	top: 30px;
-	right: 300px;
+	left: 1000px;
 }
 
 .image3 {
 	position: absolute;
 	height: 70px;
-	width: 80px;
+	width: 140px;
 	top: 50px;
 	left: 300px;
 }
 
 .image4 {
 	position: absolute;
-	height: 400px;
+	height: 430px;
 	width: 400px;
 	top: 500px;
 	left: 10px;
