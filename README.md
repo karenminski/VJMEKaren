@@ -4,4 +4,6 @@ Siin on saadaval Karen Minski tööd Tallinna Ülikooli Informaatika õppekava r
 
 Sisaldab:
 
-* Veeb ja Meedia Elemendid tööd
+* Veeb ja Meedia Elemendid
+
+*Rakenduste Programmeerimine
