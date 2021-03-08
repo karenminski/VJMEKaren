@@ -151,3 +151,27 @@ footer {
 	0% {transform: rotate(0deg);}
 	100% {transform: rotate(360deg);}
 }
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(134, 171, 192, 0.5);
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: rgba(71, 105, 125, 0.5);
+}
