@@ -6,4 +6,4 @@ Sisaldab:
 
 * Veeb ja Meedia Elemendid
 
-*Rakenduste Programmeerimine
+* Rakenduste Programmeerimine
