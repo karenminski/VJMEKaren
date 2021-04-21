@@ -1,5 +1,5 @@
 let message = "See tõesti töötab!"; //varasemalt kasutati muutujate jaoks lühendit var
-let picurl = "../../media/tunnitoo2/tlu_42/";
+let picurl = "../../media/TLU_600x400/";
 let picnameprefix = "tlu_";
 let picext = ".jpg";
 let minpicnum = 1;
@@ -7,7 +7,7 @@ let maxpicnum = 43;
 let picnum = 1;
 let picchange = 0;
 
-window.onload = function(){
+window.onload = function () {
 	//alert("See töötab!");
 	//console.log("Sõnum on: " + message);
 	putOpeningTime();
@@ -18,40 +18,40 @@ window.onload = function(){
 	document.getElementById("nextphoto").addEventListener("click", nextPhoto);
 }
 
-function nextPhoto(){
-	picnum ++;
-	if(picnum > maxpicnum){
+function nextPhoto() {
+	picnum++;
+	if (picnum > maxpicnum) {
 		picnum = minpicnum;
 	}
 	putPhoto();
 }
 
-function putRandomPic(){
+function putRandomPic() {
 	let randomnum = minpicnum + Math.round(Math.random() * (maxpicnum - minpicnum));
 	picnum = randomnum;
 	putPhoto();
 }
 
-function putPhoto(){
-	if(picchange%2 == 0){
+function putPhoto() {
+	if (picchange % 2 == 0) {
 		document.getElementById("tlu_pic2").src = picurl + picnameprefix + picnum + picext;
 		document.getElementById("tlu_pic2").style.opacity = 1;
 	} else {
 		document.getElementById("tlu_pic").src = picurl + picnameprefix + picnum + picext;
 		document.getElementById("tlu_pic2").style.opacity = 0;
 	}
-	picchange ++;
+	picchange++;
 }
 
-function putOpeningTime(){
+function putOpeningTime() {
 	let currenttime = new Date();
 	let currenthour = currenttime.getHours();
 	let currentminute = currenttime.getMinutes();
-	let currentsecond = currenttime.getSeconds(); 
-	document.getElementById("timeplace").innerHTML = "Leht avati kell: " + currenthour +":" + currentminute + ":" + currentsecond +".";
+	let currentsecond = currenttime.getSeconds();
+	document.getElementById("timeplace").innerHTML = "Leht avati kell: " + currenthour + ":" + currentminute + ":" + currentsecond + ".";
 }
 
-function clockTick(){
+function clockTick() {
 	let currenttime = new Date();
 	let currenthour = currenttime.getHours();
 	let currentminute = currenttime.getMinutes();

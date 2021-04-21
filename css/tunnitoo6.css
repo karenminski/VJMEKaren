@@ -31,7 +31,7 @@ nav {
 }
 
 section {
-	background-image: url("../media/tunnitoo2/top_left_01_transparent.png"), url("../media/tunnitoo2/bottom_right_01_transparent.png");
+	background-image: url("../media/top_left_01_transparent.png"), url("../media/bottom_right_01_transparent.png");
 	background-repeat: no-repeat;
 	background-size: 50px;/*contain  cover*/
 	background-position: top left, bottom right;
