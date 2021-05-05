@@ -2,6 +2,14 @@ body {
 	background-color: rgb(226, 219, 156);
 	color: #ffffff;
 	font-family: verdana;
+	background-image: url("../media/tlu_h200.png");
+	background-repeat: no-repeat;
+	/*repeat  no-repeat  repeat-x  repeat-x*/
+	background-position: 1250px 300px;
+	/*top center bottom   left  center  right*/
+	background-attachment: fixed;
+	/*scroll*/
+	margin: 0px;
 }
 
 h1,
@@ -45,6 +53,8 @@ section {
 	overflow: auto;/*visible   hidden  scroll   auto*/
 }
 
+/* Gallery */
+
 .photoplace {
 	width: 600px;
 	height: 425px;
@@ -62,9 +72,24 @@ section {
 	right: 0px;
 }
 
+.center_text {
+	bottom: -15px;
+    right: 40%;
+    text-align: center;
+}
+
 .fadephoto {
-	opacity: 0;
-	transition: opacity 1s;
+	opacity: 0; 
+	/*transition: opacity 1s;*/
+}
+
+.bluranim {
+	animation: bluranim 1s linear;
+}
+
+@keyframes bluranim {
+    0% {filter: blur(25px);}
+	100% {filter: blur(0px);}
 }
 
 .photoplace * {
