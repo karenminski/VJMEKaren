@@ -5,11 +5,11 @@ let counter = 1;
 
 window.onload = function(){
     area.style.perspective="15000px";
-    area.style.perspectiveOrigin="10% 80%";
-    window.setInterval(swapBackFace, 2000);
+    area.style.perspectiveOrigin="10% 50%";
+    window.setInterval(swapBackFace, 4300);
 }
 
 function swapBackFace() {
-    swaptext.innerHTML = "Tagakülg" + counter;
+    swaptext.innerHTML = "Pealmine" + counter;
     counter++;
 }

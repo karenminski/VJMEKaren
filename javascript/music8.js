@@ -1,4 +1,4 @@
-let music_url = "../../media/sounds/Ariana Grande - raindrops (60's remix).mp3";
+let music_url = "../../media/sounds/kell.mp3";
 let music_player = new Audio();
 
 function prepare_music() {

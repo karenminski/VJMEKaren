@@ -1,7 +1,7 @@
 .area {
 	width: 1000px;
 	height: 700px;
-	background-color: white;
+	background-color: rgb(161, 139, 197);
 	position: relative;
 	perspective: 3000px;
 	perspective-origin: 100% 100%;
@@ -14,7 +14,7 @@
 	left: 300px;
 	top: 150px;
 	transform-style: preserve-3d;
-	/*transform: rotateY(180deg);*/
+	animation: cubeRotation 5s infinite;
 }
 
 .cube * {
@@ -53,4 +53,10 @@
 
 .right {
 	transform: translateX(-200px) rotateY(-90deg)
+}
+
+@keyframes cubeRotation {
+    0%   {	transform: rotateX(-52deg)rotateY(5deg) rotateZ(-38deg) ;	}
+    50%   {	transform: rotateX(-52deg) rotateY(5deg) rotateZ(-238deg);	}
+    100%   {	transform: rotateX(-52deg) rotateY(5deg) rotateZ(-398deg);	}
 }
