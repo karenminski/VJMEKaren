@@ -2,7 +2,7 @@ body {
 	background-color: PowderBlue;
 	color: #000000;
 	font-family: verdana;
-	background-image: url("../media/tunnitoo2/tlu_h200.png");
+	background-image: url("../media/tlu_h200.png");
 	background-repeat: no-repeat;/*repeat  no-repeat  repeat-x  repeat-x*/
 	background-position: 1250px 300px;/*top center bottom   left  center  right*/
 	background-attachment: fixed;/*scroll*/

@@ -1,5 +1,5 @@
 //let message = "See tõesti töötab!";
-let picurl = "../../media/";
+let picurl = "../media/";
 let picnameprefix = "tlu_";
 let picext = ".jpg";
 let minpicnum = 1;

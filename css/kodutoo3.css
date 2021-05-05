@@ -10,6 +10,24 @@ h3 {
 	color: rgb(255, 255, 255);
 }
 
+section {
+	background-image: url("../media/top_left_01_transparent.png"), url("../media/bottom_right_01_transparent.png");
+	background-repeat: no-repeat;
+	background-size: 50px;/*contain  cover*/
+	background-position: top left, bottom right;
+	width: 75%;
+	border: 5px dotted white;
+	background-origin: padding-box;/*content-box  padding-box    border-box*/
+	/*background-clip: */
+	margin-bottom: 10px;
+	/*margin: 10px 20px;    vertikaalne   horisontaalne*/
+	/*margin: 10px 20px 5px,   üleval    horisontaalne  all  */
+	/*margin: 10px 20px 30px 40px;      üleval ...*/
+	min-height: 400px;
+	max-height: 800px;
+	overflow: auto;/*visible   hidden  scroll   auto*/
+}
+
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -68,4 +86,71 @@ li a:hover {
 	left: 194px;
 	top: 400px;
 	
+}
+
+#stage {
+	width: 800px;
+	height: 500px;
+	background-color: white;
+	position: relative; /*static   relative   absolute    fixed*/
+	/*left   right   top    bottom  */
+	/*left: 100px;
+	top: 100px;*/
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+#stage * {
+	position: absolute;
+}
+
+#windmill {
+	width: 308px;
+	height: 360px;
+	top: -50px;
+	transform: scale(.5);
+}
+
+#wm_body {
+	bottom: 0px;
+}
+
+.wm_wing {
+	animation: spin 6s linear infinite reverse;
+}
+
+#truck {
+	width: 958px;
+	height: 429px;
+	transform-origin: left top;
+	transform: scale(.2);
+	top: 350px;
+	left: 150px;
+}
+
+.truck_front_wheel {
+	bottom: -45px;
+	right: 5px;
+}
+
+.truck_rear_wheel {
+	bottom: -45px;
+	left: 85px;
+}
+
+.wheel {
+	animation: spin 1s linear infinite;
+}
+
+#sun {
+	width: 70px;
+	height: 70px;
+	bottom: 400px;
+	left: 600px;
+	animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
 }

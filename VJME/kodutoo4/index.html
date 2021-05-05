@@ -4,7 +4,10 @@
 <head>
 	<title>Veeb- ja meediaelemendid</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../../css/kodutoo2.css">
+	<link rel="stylesheet" type="text/css" href="../../css/kodutoo4.css">
+	<link rel="stylesheet" type="text/css" href="../../css/clock.css">
+	<script src="../../javascript/kodutoo4.js" defer></script>
+	<script src="../../javascript/clock8.js" defer></script>
 </head>
 
 <body>
@@ -17,15 +20,39 @@
 		<header>
 			<h1>Veeb- ja meediaelemendid</h1>
 			<p>See veebileht on loodud õppetöö raames ja ei sisalda olulist või mõttekat sisu!</p>
+			<p id="timeplace">Leht on laadimisel!</p>
 		</header>
-		<div class="parent">
-			<p>
-				<img class="image1" src="../../media/49973-aerial-view-of-the-beautiful-scenery-of-the-peak.jpg" />
-				<img class="image2" src="../../media/plane.png" />
-				<img class="image3" src="../../media/helicopter.png" />
-				<img class="image4" src="../../media/hiker.png" />
-			</p>
-		</div>
+		<section id="media">
+			<h2>Meediaelemendid veebilehel</h2>
+			<p>Veebilehel saab kasutada pea kõiki meediaelemente nagu töölauarakendusteski.</p>
+			<h3>Pildid</h3>
+			<p>Kui pilt on lihtsalt kujunduse osa (bänner jms).<p>
+					<div class="photoplace">
+						<img id="tlu_pic" src="../../media/loading_600x400.png" alt="Tallinna Ülikooli pilt">
+						<img id="tlu_pic2" class="fadephoto" src="../../media/loading_600x400.png"
+							alt="Tallinna Ülikooli pilt">
+						<button id="prevphoto" type="button" class="bot_btn">Eelmine foto</button>
+						<button id="nextphoto" type="button" class="bot_btn right_btn">Järgmine foto</button>
+					</div>
+		</section>
+		<section id="time">
+			<h2>Ajanäitaja ehk kell</h2>
+			<div id="clockArea" class="clockArea">
+				<div id="clock" class="clock">
+					<img src="../../media/clock_box.png" alt="kellakast">
+					<img src="../../media/clock_pendulum.png" alt="kellapendel" id="pendulus" class="pendulus">
+					<div id="clockface" class="clockface">
+						<img src="../../media/clock_face.png" alt="kella numbrilaud">
+						<img src="../../media/hour_hand.png" alt="kella tunniseier" id="hourhand" class="clockhand">
+						<img src="../../media/minute_hand.png" alt="kella minutiseier" id="minutehand"
+							class="clockhand">
+						<img src="../../media/second_hand.png" alt="kella sekundiseier" id="secondhand"
+							class="clockhand">
+					</div>
+					<img src="../../media/clock_frame.png" alt="kellakasti raam">
+				</div>
+			</div>
+		</section>
 </body>
 
 </html>

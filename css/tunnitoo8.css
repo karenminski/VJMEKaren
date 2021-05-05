@@ -2,7 +2,7 @@ body {
 	background-color: PowderBlue;
 	color: #000000;
 	font-family: verdana;
-	background-image: url("../../media/tlu_h200.png");
+	background-image: url("../media/tlu_h200.png");
 	background-repeat: no-repeat;/*repeat  no-repeat  repeat-x  repeat-x*/
 	background-position: 1250px 300px;/*top center bottom   left  center  right*/
 	background-attachment: fixed;/*scroll*/
@@ -31,7 +31,7 @@ nav {
 }
 
 section {
-	background-image: url("../../media/top_left_01_transparent.png"), url("../../media/bottom_right_01_transparent.png");
+	background-image: url("../media/top_left_01_transparent.png"), url("../media/bottom_right_01_transparent.png");
 	background-repeat: no-repeat;
 	background-size: 50px;/*contain  cover*/
 	background-position: top left, bottom right;
