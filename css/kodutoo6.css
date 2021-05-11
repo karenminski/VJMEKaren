@@ -38,3 +38,11 @@ canvas {
 	margin-bottom: 50px;
 }
 
+button{
+	border-radius: 12px;
+	background-color: rgb(18, 11, 43);
+	color: #ffffff;
+	font-size: 18px;
+	padding: 10px;
+}
+
