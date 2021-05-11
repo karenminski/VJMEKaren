@@ -5,7 +5,6 @@ let ball_list = [];
 let elements_limit = 10;
 let game_alphabet = [];
 let correct_hit_count = 0;
-let cTime = 120;
 
 //täiendada mängu!
 //mänguelemendid värviliseks - juhuslikud värvid
@@ -29,13 +28,18 @@ function init_game() {
     //moving();
 }
 
-var start = Date.now();
-setInterval(function() {
-    var delta = Date.now() - start; // milliseconds elapsed since start
-    output(Math.floor(delta / 1000)); // in seconds
-    // alternatively just show wall clock time:
-    output(new Date().toUTCString());
-}, 1000); // update about every second
+function timer(){
+    var c = 0;
+    document.getElementById("timer").innerHTML = ++c;
+}
+
+function start() {
+    init_game();
+}
+
+function restart() {
+    window.location.reload()
+}
 
 function add_elements() {
     let base_alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "Š", "Z", "Ž", "T", "U", "V", "W", "Õ", "Ä", "Ö", "Ü", "X", "Y"];
@@ -161,8 +165,4 @@ function moving() {
     ctx.fill();
     ctx.closePath();
     requestAnimationFrame(moving);
-}
-
-function restart() {
-    window.location.reload()
 }

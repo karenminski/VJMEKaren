@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="et">
+
 <head>
 	<title>Veeb- ja meediaelemendid</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../../css/kodutoo6.css">
 	<script src="../../javascript/game.js" defer></script>
 </head>
+
 <body>
 	<ul>
 		<li><a href="../index.html">Tagasi</a></li>
@@ -20,14 +22,17 @@
 
 		<section id="graphics">
 			<h2>Mäng</h2>
-			<button type="button" onclick="init_game()">Alusta</button>
-			<button type="button" onclick="restart()">Tühjenda laud</button><br><br>
+			<p id="timer">0</p>
+			<button type="button" onclick="start();myTimer = setInterval(timer, 1000);">Alusta</button>
+			<button type="button" onclick="restart()">Tühjenda laud</button>
+			<button onClick="clearInterval(myTimer)">Peata stopper!</button><br><br>
 			<canvas id="canvas" width="960" height="540">Kahjuks Teie brauser ei toeta HTML5 canvas elementi!</canvas>
 		</section>
-		
+
 		<footer>
 			<p>Veebileht lõppeb siin!</p>
 		</footer>
 	</main>
 </body>
+
 </html>
