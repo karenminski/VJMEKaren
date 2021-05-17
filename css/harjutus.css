@@ -1,0 +1,148 @@
+body {
+	background-color: rgb(186, 221, 254);
+	color: #000000;
+	font-family: verdana;
+	background-image: url("../media/comp_3.png"), url("../media/comp_3.png"), url("../media/comp_3.png");
+	background-repeat: no-repeat;
+	background-position: top left, bottom left, bottom right;
+}
+
+canvas {
+	background-color: white;
+	border: 1px solid black;
+	margin-bottom: 50px;
+}
+
+.namearea {
+	grid-area: header;
+	grid-area: 1 / 2 / 2 / 5;
+}
+
+.menu {
+	grid-area: 2 / 2 / 3 / 3;
+	padding-top: 150px;
+}
+
+.cubecontainer {
+	grid-area: 2 / 2 / 3 / 3;
+	border-radius: 25px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	background-color: rgb(255, 224, 245);
+	width: 400px;
+	height: 400px;
+	perspective: 800px;
+	/*määrab  kauguse vaatajast*/
+	perspective-origin: 50% 50%;
+	/*perspektiivpunkt*/
+}
+
+.contentarea2 {
+	grid-area: 2 / 3 / 3 / 5;
+	border-radius: 25px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+}
+
+.banner-bottom {
+	grid-area: 3 / 3 / 4 / 4;
+}
+
+.main-grid {
+	display: grid;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.cube {
+	position: relative;
+	width: 200px;
+	transform-style: preserve-3d;
+	margin: 100px auto;
+}
+
+.cube div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+
+	color: rgba(0, 0, 0, 0.8);
+	text-transform: uppercase;
+}
+
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+}
+
+.backcover {
+	background: rgba(255, 0, 0, 0.2);
+
+}
+
+.left {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+}
+
+.leftcover {
+	background: rgba(0, 255, 0, 0.2);
+}
+
+.right {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+}
+
+.rightcover {
+	background: rgba(0, 0, 255, 0.2);
+}
+
+.top {
+	transform: rotateX(-90deg) rotateY(180deg) translateY(-100px);
+	transform-origin: top center;
+}
+
+.topcover {
+	background: rgba(255, 255, 0, 0.2);
+}
+
+.bottom {
+	transform: rotateX(90deg) rotateY(180deg) translateY(100px);
+	transform-origin: bottom center;
+}
+
+.bottomcover {
+	background: rgba(255, 0, 255, 0.2);
+}
+
+.front {
+	transform: translateZ(100px);
+}
+
+.frontcover {
+	background: rgba(0, 255, 255, 0.2);
+}
+
+.hide {
+	backface-visibility: hidden;
+}
+
+.back,
+.left,
+.front,
+.right {
+	padding-top: 50px;
+}
+
+.indicatorarea-bottom-left {
+	position: top left;
+}
+
+ul{
+	list-style-type: none;
+}
