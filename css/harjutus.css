@@ -13,18 +13,24 @@ canvas {
 	margin-bottom: 50px;
 }
 
-.namearea {
-	grid-area: header;
-	grid-area: 1 / 2 / 2 / 5;
+.main-grid {
+	display: grid;
+	grid-template-columns: 0.8fr 1.1fr 1.7fr 0.8fr;
+	grid-template-rows: 0.5fr 2fr 0.5fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	  ". namearea namearea ."
+	  "menu cubecontainer contentarea2 ."
+	  ". banner-bottom banner-bottom .";
 }
 
-.menu {
-	grid-area: 2 / 2 / 3 / 3;
-	padding-top: 150px;
-}
+.contentarea2 { grid-area: contentarea2; }
+.banner-bottom { grid-area: banner-bottom; }
+.cubecontainer { grid-area: cubecontainer; }
+.menu { grid-area: menu; }
+.namearea { grid-area: namearea; }
 
 .cubecontainer {
-	grid-area: 2 / 2 / 3 / 3;
 	border-radius: 25px;
 	border-width: 2px;
 	border-style: solid;
@@ -39,20 +45,10 @@ canvas {
 }
 
 .contentarea2 {
-	grid-area: 2 / 3 / 3 / 5;
 	border-radius: 25px;
 	border-width: 2px;
 	border-style: solid;
 	border-color: white;
-}
-
-.banner-bottom {
-	grid-area: 3 / 3 / 4 / 4;
-}
-
-.main-grid {
-	display: grid;
-	margin: 0;
 }
 
 * {
@@ -143,6 +139,6 @@ canvas {
 	position: top left;
 }
 
-ul{
+ul {
 	list-style-type: none;
 }
